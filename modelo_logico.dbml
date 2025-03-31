@@ -1,0 +1,32 @@
+Customer
+-
+CustomerID PK int
+Name string INDEX
+Address1 string
+Address2 NULL string
+Address3 NULL string
+
+Order
+-
+OrderID PK int
+CustomerID int FK >- Customer.CustomerID
+TotalAmount money
+OrderStatusID int FK >- os.OrderStatusID
+
+OrderLine as ol
+----
+OrderLineID PK int
+OrderID int FK >- Order.OrderID
+ProductID int FK >- p.ProductID
+Quantity int
+
+Product as p
+------------
+ProductID PK int
+Name varchar(200) UNIQUE
+Price money
+
+OrderStatus as os
+----
+OrderStatusID PK int
+Name UNIQUE string
