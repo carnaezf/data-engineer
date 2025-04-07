@@ -1,6 +1,6 @@
-email,nombre,telefono,empresa,prioridad;;;;;;;
-sofia@empresa.cl,Sofia,912345678,EmpresaA,5.0;;;;;;;
-mario@correo,Mario,no definido,EmpresaB,11.0;;;;;;;
-catalina@empresa.com,Catalina,987654321,EmpresaC,7.0;;;;;;;
-ana@mail.com,,965874123,EmpresaB,;;;;;;;
-catalina@empresa.com,Catalina,987654321,EmpresaC,7.0;;;;;;;
+email,nombre,telefono,empresa,prioridad
+sofia@empresa.cl,Sofia,912345678,EmpresaA,5.0
+mario@correo,Mario,no definido,EmpresaB,11.0
+catalina@empresa.com,Catalina,987654321,EmpresaC,7.0
+ana@mail.com,,965874123,EmpresaB
+catalina@empresa.com,Catalina,987654321,EmpresaC,7.0
