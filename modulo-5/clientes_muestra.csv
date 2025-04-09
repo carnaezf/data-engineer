@@ -1,0 +1,13 @@
+id_cliente,nombre,email,telefono,fecha_actualizacion,origen_dato
+1,Ana,ana@mail.com,912345678,2024-11-01,form_web
+2,Luis,luisgmail.com,912345678,2021-05-20,
+3,Marcelo,marcelo@mail.com,123456,2023-03-15,CRM
+4,Carla,carl@,987654321,,form_web
+5,,soledad@mail.com,no definido,2022-01-01,
+6,Soledad,soledad@mail.com,987654321,2023-09-30,import_excel
+7,Pedro,pedro@empresa.cl,912345678,2020-06-10,CRM
+7,Pedro,pedro@empresa.cl,912345678,2020-06-10,CRM
+9,Juan,,no disponible,,
+10,,juan@mail.com,912345678,2023-12-15,form_web
+11,Natalia,natalia@correo,,2019-08-22,no registrado
+12,Mario,mario@correo.cl,912345678,2022-10-10,form_web
