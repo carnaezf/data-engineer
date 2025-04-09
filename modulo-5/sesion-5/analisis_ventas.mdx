@@ -1,0 +1,25 @@
+
+-- Objetivo: Consultar el total de ventas de smartphones por región
+-- en un cubo OLAP específico, filtrando por el primer trimestre del año 2023.
+-- para el primer trimestre del año 2023, a partir del cubo 'Cubo_Ventas'
+
+SELECT 
+  -- Columna de salida: muestra la medida cuantitativa 'Total Ventas'
+  [Measures].[Total Ventas] ON COLUMNS,
+
+  -- Filas de salida: cada fila representa una región del cubo
+  -- Se obtienen todos los elementos 'hijo' de la jerarquía 'Región' dentro de la dimensión 'Geografía'
+  [Geografía].[Región].Children ON ROWS
+
+FROM 
+  -- Fuente de datos: el cubo OLAP que contiene los hechos y dimensiones relevantes
+  [Cubo_Ventas]
+
+WHERE 
+(
+  -- Filtro 1: solo incluir productos de la categoría 'Smartphones'
+  [Producto].[Categoría].[Smartphones],
+
+  -- Filtro 2: limitar el análisis al primer trimestre del año 2023
+  [Tiempo].[Año].[2023].[Q1]
+)
